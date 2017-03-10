@@ -17,6 +17,8 @@ client:on('messageCreate', function(message)
 		message.channel:sendMessage('Your legacy dose of dank mema: \n'.. arr[math.random(439)])
 	elseif message.content == "!f" then
 		message.channel:sendMessage(message.author.username.. ' has paid their respects')
+	elseif message.content == "!dankamema" then
+		message.channel.sendMessage('You\'re welcome <3')
 	end
 end)
 
