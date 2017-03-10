@@ -9,7 +9,7 @@ for line in mema:lines() do
 end
 
 client:on('ready', function()
-	print('Logged in as '.. client.user.username)
+	print('ready to rumble 8) ')
 end)
 
 client:on('messageCreate', function(message)
@@ -18,7 +18,7 @@ client:on('messageCreate', function(message)
 	elseif message.content == "!f" then
 		message.channel:sendMessage(message.author.username.. ' has paid their respects')
 	elseif message.content == "!dankamema" then
-		message.channel.sendMessage('You\'re welcome <3')
+		message.channel:sendMessage('You\'re welcome <3')
 	end
 end)
 
